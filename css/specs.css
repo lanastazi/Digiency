@@ -1,0 +1,221 @@
+
+:root {
+    font-size: 16px;
+
+    --light-main-bg: #fff;
+    --light-second-bg: #FFF7F4;
+    --light-main-text-color: #373737;
+    --light-second-text-color: #7B7B7B;
+
+    --dark-main-bg: #18191A;
+    --dark-secondary-bg: #242526;
+    --dark-third-bg: #3a3b3c;
+    --dark-text-color: #fff;
+    --dark-gray-text-color: #7B7B7B;
+
+    --accent-color: #FF5300;
+}
+
+/* dark mode */
+
+.header.dark {
+    background-color: var(--dark-secondary-bg);
+}
+
+.main-color-bg.dark,
+section.dark .expirience-box {
+    background-color: var(--dark-third-bg);
+}
+
+.about.dark,
+.team.dark,
+.work.dark,
+.blogs.dark,
+.contact.dark {
+    background-color: var(--dark-main-bg);
+}
+
+.experience.dark,
+.feedback.dark,
+section.dark .about__card,
+section.dark .team-card,
+section.dark .blogs-card,
+section.dark .contact-card {
+    background-color: var(--dark-secondary-bg);
+}
+
+.main-color-bg.dark .list__link,
+.main-color-bg.dark .header__logo,
+header.dark h1,
+header.dark p,
+section.dark h2,
+section.dark h3,
+section.dark .section-name,
+section.dark p,
+section.dark .expirience-box__index,
+.team.dark .team-card__member-name,
+.blogs.dark .blogs-card__author-name {
+    color: var(--dark-text-color);
+}
+
+.main-color-bg.dark .header__theme-toggle-img {
+    background: url('/img/light-switcher.svg') no-repeat center;
+}
+
+section.dark h2 {
+    color: var(--dark-text-color);
+}
+
+/* Specifications */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+.container {
+    width: 1170px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: var(--light-main-text-color);
+    white-space: nowrap;
+}
+
+section,
+.feedback-clients,
+.blogs-cards {
+    overflow: hidden;
+}
+
+
+.section-heading {
+    font-weight: 600;
+    font-size: 2.4375rem;
+    line-height: 123.6%;
+    margin-bottom: 1.125rem;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.second-text-color {
+    color: var(--light-second-text-color);
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 0.75rem 1.3rem;
+    color: #fff;
+    background: var(--accent-color);
+    border-radius: 5px;
+    transition: .4s ease;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover,
+.contact-button:focus {
+    color: #fff;
+    transition: .4s ease;
+    background-color: #d34600;
+}
+
+.section-name {
+    font-weight: 400;
+    line-height: 150.6%;
+    color: var(--light-second-text-color);
+    display: inline-block;
+    margin-bottom: 1.5625rem;
+}
+
+.slider {
+    gap: 4px;
+    cursor: pointer;
+}
+
+.slider__item:nth-of-type(1) {
+    background-color: var(--accent-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.slider__item:nth-of-type(2) {
+    background-color: var(--light-main-text-color);
+    width: 49px;
+    height: 15px;
+    border-radius: 7.5px;
+}
+
+.slider__item:nth-of-type(3) {
+    background-color: var(--light-second-text-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* social links */
+
+.social-link {
+    background-color: #fff;
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+}
+
+.social-icon-1 {
+    background: url('/img/facebook-orange.png') no-repeat center;
+}
+
+.social-icon-2 {
+    background: url('/img/insta-orange.png') no-repeat center;
+}
+
+.social-icon-3 {
+    background: url('/img/twitter-orange.png') no-repeat center;
+}
+
+.social-icon-4 {
+    background: url('/img/skype-orange.png') no-repeat center;
+}
+
+/* hover */
+
+.social-link:hover .social-icon-1 {
+    background: url('/img/facebook-white.png') no-repeat center;
+}
+
+.social-link:hover .social-icon-2 {
+    background: url('/img/instagram-white.png') no-repeat center;
+}
+
+.social-link:hover .social-icon-3 {
+    background: url('/img/twitter-white.png') no-repeat center;
+}
+
+.social-link:hover .social-icon-4 {
+    background: url('/img/skype-white.png') no-repeat center;
+}
+
+.header-social__links,
+.team-social__links {
+    position: absolute;
+    gap: 5px;
+}
